@@ -1,0 +1,85 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: #586069;
+    margin-bottom: 0.5rem;
+}
+
+.lastCommit {
+    color: #586069;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.ownerLink {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.ownerLink:hover {
+    text-decoration: underline;
+}
+
+.description {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.languages {
+    margin-bottom: 2rem;
+}
+
+.languageList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.language {
+    padding: 0.25rem 0.75rem;
+    background-color: #f1f8ff;
+    color: #0366d6;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+}
+
+.link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0366d6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.link:hover {
+    background-color: #035fc7;
+}

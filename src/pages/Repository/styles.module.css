@@ -1,0 +1,58 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+    position: relative;
+}
+
+.backButton {
+    position: absolute;
+    top: var(--spacing-lg);
+    left: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.backButton:hover {
+    background-color: var(--color-background-hover);
+    transform: translateX(-2px);
+}
+
+.loading {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-large);
+}
+
+.error {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--color-error);
+    font-size: var(--font-size-large);
+}
+
+.error button {
+    margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-lg);
+    }
+
+    .backButton {
+        top: var(--spacing-md);
+        left: var(--spacing-md);
+        font-size: var(--font-size-small);
+    }
+}

@@ -1,0 +1,105 @@
+:root {
+    /* Colors */
+    --color-primary: #0366d6;
+    --color-primary-hover: #035fc7;
+    --color-text: #24292e;
+    --color-text-secondary: #586069;
+    --color-border: #e1e4e8;
+    --color-background: #ffffff;
+    --color-background-hover: #f6f8fa;
+    --color-error: #cb2431;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    --font-size-base: 16px;
+    --font-size-small: 14px;
+    --font-size-large: 18px;
+    --font-size-title: 24px;
+    --line-height-base: 1.5;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /* Border radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 6px;
+    --border-radius-lg: 8px;
+
+    /* Transitions */
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Utility classes */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 14px;
+        --font-size-title: 20px;
+        --spacing-lg: 16px;
+    }
+
+    .container {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-base: 13px;
+        --font-size-title: 18px;
+        --spacing-md: 12px;
+    }
+}
